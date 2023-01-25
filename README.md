@@ -57,6 +57,7 @@ Next step is to run application through command:
     npm run start
 ```
 
-The terminal will show a QR code, which you scan with the "Expo Go" app, which you can find in the Play Store on android or App Store on ios.
+The terminal will show a QR code, which you need to scan with the "Expo Go" app and then application will work.
+"Expo Go" you can find in the Play Store on android or App Store on ios.
 
 I tested this app only on android and I do not know exacly how it behaves on ios.
