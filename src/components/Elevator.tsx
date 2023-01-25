@@ -46,12 +46,7 @@ export const Elevator = ({ elevatorStatus }: ElevatorProps) => {
               onFloorPress={(floor) => dropoff(id, floor)}
               pressedFloors={stops}
             />
-            <ElevatorDoors
-              isOpen={
-                curentElevatorFloor === currentFloor &&
-                state === ElevatorState.IDLE
-              }
-            />
+            <ElevatorDoors isOpen={curentElevatorFloor === currentFloor} />
           </Div>
           <Div
             px={10}

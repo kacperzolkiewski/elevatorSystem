@@ -2,12 +2,14 @@ import { Direction, ElevatorCandidate, PickUpRequest } from "../types/elevator";
 import { Elevator } from "./Elevator";
 import { inRange, remove } from "lodash";
 
+const ELEVATOR_COUNT = 10;
+
 export class ElevatorSystem {
   private _pickupRequests: PickUpRequest[] = [];
   public _elevators: Elevator[] = [];
 
   constructor() {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < ELEVATOR_COUNT; i++) {
       this._elevators.push(new Elevator(i, 0));
     }
   }
